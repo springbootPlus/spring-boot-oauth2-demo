@@ -59,6 +59,6 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
                 .scopes("read", "write")
                 .resourceIds(resourceId)
                 .accessTokenValiditySeconds(accessTokenValiditySeconds)
-                .secret("secret");
+                .secret("{noop}secret");
     }
 }
