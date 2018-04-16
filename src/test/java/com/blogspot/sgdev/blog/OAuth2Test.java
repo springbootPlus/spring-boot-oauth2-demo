@@ -4,6 +4,7 @@ import org.jose4j.json.JsonUtil;
 import org.jose4j.jwt.consumer.JwtConsumer;
 import org.jose4j.jwt.consumer.JwtConsumerBuilder;
 import org.jose4j.jwt.consumer.JwtContext;
+import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.Before;
 import org.slf4j.Logger;
@@ -34,7 +35,11 @@ public class OAuth2Test {
    }
 
    protected String prettyPrintJson(String flatJson) {
-      return (new JSONObject(flatJson).toString(3));
+      try {
+         return (new JSONObject(flatJson).toString(3));
+      } catch (JSONException e) {
+         return null;
+      }
    }
 
 }
