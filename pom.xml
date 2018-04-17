@@ -9,7 +9,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <spring-security-jwt.version>1.0.9.RELEASE</spring-security-jwt.version>
-        <spring-security-oauth.version>2.2.1.RELEASE</spring-security-oauth.version>
+        <spring-security-oauth.version>2.3.2.RELEASE</spring-security-oauth.version>
         <spring-session.version>2.0.2.RELEASE</spring-session.version>
         <mybatisplus-spring-boot-starter.version>1.0.5</mybatisplus-spring-boot-starter.version>
         <mybatis-plus-boot-starter.version>2.1.9</mybatis-plus-boot-starter.version>
